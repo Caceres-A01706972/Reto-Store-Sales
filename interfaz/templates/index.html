@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Prediction</title>
+    <!-- Add Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Sales Prediction</h1>
+        <form method="POST" action="/predict">
+            <div class="mb-4">
+                <label for="store_nbr" class="block text-gray-700 text-sm font-bold mb-2">Store Number:</label>
+                <input type="number" name="store_nbr" required
+                       class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                       min="1" max="54">
+            </div>
+
+            <div class="mb-6">
+                <label for="product_family" class="block text-gray-700 text-sm font-bold mb-2">Product Family:</label>
+                <select name="family" required
+                    class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="" disabled selected>Select a Product Family</option>
+                    <option value="AUTOMOTIVE">Automotive</option>
+                    <option value="BABY CARE">Baby Care</option>
+                    <option value="BEAUTY">Beauty</option>
+                    <option value="BEVERAGES">Beverages</option>
+                    <option value="BOOKS">Books</option>
+                    <option value="BREAD/BAKERY">Bread / Bakery</option>
+                    <option value="CELEBRATION">Celebration</option>
+                    <option value="CLEANING">Cleaning</option>
+                    <option value="DAIRY">Dairy</option>
+                    <option value="DELI">Deli</option>
+                    <option value="EGGS">Eggs</option>
+                    <option value="FROZEN FOODS">Frozen Foods</option>
+                    <option value="GROCERY I">Grocery I</option>
+                    <option value="GROCERY II">Grocery II</option>
+                    <option value="HARDWARE">Hardware</option>
+                    <option value="HOME AND KITCHEN I">Home and Kitchen I</option>
+                    <option value="HOME AND KITCHEN II">Home and Kitchen II</option>
+                    <option value="HOME APPLIANCES">Home Appliances</option>
+                    <option value="HOME CARE">Home Care</option>
+                    <option value="LADIESWEAR">Ladieswear</option>
+                    <option value="LAWN AND GARDEN">Lawn and Garden</option>
+                    <option value="LINGERIE">Lingerie</option>
+                    <option value="LIQUOR,WINE,BEER">Liquor, Wine, Beer</option>
+                    <option value="MAGAZINES">Magazines</option>
+                    <option value="MEATS">Meats</option>
+                    <option value="PERSONAL CARE">Personal Care</option>
+                    <option value="PET SUPPLIES">Pet Supplies</option>
+                    <option value="PLAYERS AND ELECTRONICS">Players and Electronics</option>
+                    <option value="POULTRY">Poultry</option>
+                    <option value="PREPARED FOODS">Prepared Foods</option>
+                    <option value="PRODUCE">Produce</option>
+                    <option value="SCHOOL AND OFFICE SUPPLIES">School and Office Supplies</option>
+                    <option value="SEAFOOD">Seafood</option>
+                </select>
+            </div>
+
+            <div class="text-center">
+                <input type="submit" value="Predict"
+                       class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
