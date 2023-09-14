@@ -10,7 +10,7 @@ Este repositorio contiene la solución y entregas para el reto de la materia TC3
 
 El reto consiste en hacer el análisis de una base de datos sobre ventas de una franquicia de tiendas en Ecuador para generar un modelo de predicción de ventas unitarias por tienda y temporada del año para maximizar ventas y minimizar inventario estancado y desechos.
 
-Dicho dataset descargado de la competencia respectiva en [Kaggle](https://www.kaggle.com/competitions/store-sales-time-series-forecasting)
+Dicho dataset descargado de la competencia respectiva en [Kaggle](https://www.kaggle.com/competitions/store-sales-time-series-forecasting) a la cuál se sometió el resultado del modelo y el equipo tiene un lugr en la tabla de posiciones.
 
 ## Contenido
 El análisis del reto se encuentra en [este documento](https://docs.google.com/document/d/1KCUWGYhB1hBM7uHBENqYNZ4LaKKI_LX4514n1KHjIX0/edit?usp=sharing), donde se explica más a fondo el alcance del proyecto.
